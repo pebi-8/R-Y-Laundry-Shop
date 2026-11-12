@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>john</title>
+<style type="text/css">
+
+button{
+	background-color: #FF5D8F;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 640px;
+    margin-top: 50px;
+    padding: 10px;
+}
+button:hover{
+    background-color: #FADDE1;
+}
+.slideshow-container{
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+.text{
+  color: #FF5D8F;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext{
+  color: #FF5D8F;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+  background-color: #FF5D8F;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px){
+  .prev, .next,.text {font-size: 11px}
+}
+header{
+  font-size: 35px;
+  font-family: Elephant;
+  text-align: center;
+}	
+.box1{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 60px;
+  text-align: center;
+}	
+.box2{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-top: -60px;
+  text-align: center;
+}
+.box3{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 540px;
+  margin-top: -60px;
+  text-align: center;
+}
+.box4{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: 30px;
+  text-align: center;
+}
+.box4 p{
+	font-size: 12px;
+}
+.box5{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-top: -60px;
+  text-align: center;
+}
+.box6{
+  background-color: #FFA6C1;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 540px;
+  margin-top: -60px;
+  text-align: center;
+}
+.box7{
+  background-color: #FFA6C1;
+  height: 70px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: 30px;
+  text-align: center;
+}
+.box8{
+  background-color: #FFA6C1;
+  height: 70px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-top: -80px;
+  text-align: center;
+}
+.box9{
+  background-color: #FFA6C1;
+  height: 70px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 540px;
+  margin-top: -80px;
+  text-align: center;
+}
+.box10{
+  background-color: #FFA6C1;
+  height: 250px;
+  width: 400px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 800px;
+  margin-top: -260px;
+}
+.box10 a{
+  font-size: 30px;
+  color: white;
+}
+a.explore-button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.03s ease
+}
+a.explore-buttonhover{
+    background-color: beige;
+    color: #000;
+}
+.right{
+    float: right;
+    color: #fff;
+}
+a.explore-button.right{
+    float: right;
+    color: #000;
+    background-color: beige;
+    border: 2px solid beige;
+}
+
+a.explore-button.right:hover{
+    background-color: beige;
+    color: beige;
+}
+div#box11{
+  background-color: #FFA6C1;
+  height: 330px;
+  width: 1200px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+.box11 h1{
+  font-size: 50px;
+  text-align: center;
+}
+.box11 p{
+  font-size: 18px;
+}
+div#box12{
+  background-color: #FFA6C1;
+  height: 3090px;
+  width: 1200px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.box12 h1{
+  font-size: 50px;
+  text-align: center;
+}
+.box12 p{
+  font-size: 15px;
+}
+.box12 img{
+  padding: 50px;
+}
+div#box13{
+  background-color: #FFA6C1;
+  height: 1180px;
+  width: 1200px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.box13 h1{
+  font-size: 50px;
+  text-align: center;
+}
+.box13 h2{
+  font-size: 30px;
+}
+.box13 img{
+  height: 800px;
+  width: 1000px;
+  padding: 100px;
+}
+div#box14{
+  background-color: #FFA6C1;
+  height: 780px;
+  width: 1200px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.box14 h1{
+  font-size: 50px;
+  text-align: center;
+}
+.box14 p{
+  font-size: 17px;
+}
+.box14 img{
+  height: 500px;
+  width: 1100px;
+  padding: 50px;
+}
+
+
+</style>
+</head>
+<body bgcolor="#FADDE1">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="john1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="john2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="john3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="john4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<a href="start.html" class="button"><button>Home</button></a>
+
+<header>
+  <h1>John Paulo Quiambao Prats</h1>
+</header>
+
+<div class="box1">
+	<p>BORN: </p>
+</div>
+
+<div class="box2">
+	<p>AGE:  years</p>
+</div>
+
+<div class="box3">
+	<p>HEIGHT: </p>
+</div>
+
+<div class="box4">
+	<p>SPOUSE: </p>
+	<p>()</p>
+</div>
+
+<div class="box5">
+	<p>OCCUPATION: </p>
+</div>
+
+<div class="box6">
+	<p>LIVE: </p>
+</div>
+
+<div class="box7">
+	<p>CHILDREN:</p>
+</div>
+
+<div class="box8">
+	<p>SIBLINGS:</p>
+</div>
+
+<div class="box9">
+	<p>PARENTS:</p>
+</div>
+
+<div class="box10"> 
+  <aside>  
+      <h1 align="center"></h1>
+  <section>
+    <ul>
+      <a href="#box11">Personal Life</a>
+    </ul>
+    <ul>
+      <a href="#box12">Filmography</a>
+    </ul>
+    <ul>
+      <a href="#box13">Discography</a>
+    </ul>
+    <ul>
+      <a href="#box14">Awards And Nomination</a>
+    </ul>
+  </section>
+  </aside>
+</div>
+
+<div class="box11" id="box11">
+  <h1>Personal Life</h1>
+  <p>John Paulo Quiambao Prats was born on February 14, 1984, in Manila, Philippines, to parents Daniel Rafael Prats and Alma Quiambao-Prats, a Kapampangan from Macabebe, Pampanga. Prats has four siblings, including younger sister Camille, who is also an actress. He was educated in OB Montessori and at ABS-CBN Distance Learning Center. Prats is a business management graduate at Thames International Business School. Prats dated actresses Heart Evangelista from 1999 to 2004 and Bianca Manalo in 2011.</p>
+  <p>On September 24, 2014, Prats organized a flash mob and proposed to his long-time girlfriend Isabel Oli in Eastwood City. On May 16, 2015, Prats and Oli married in Batangas.</p>
+ 
+
+  <a href="#" class="explore-button right" id="back-to-top">Go Back</a>
+</div>
+
+<div class="box12" id="box12">
+  <h1>Filmography</h1>
+  <img src="jfilm.png">
+  <h2>Television</h2>
+  <img src="jtv.png">  
+  
+
+  <a href="#" class="explore-button right" id="back-to-top">Go Back</a>
+
+</div>
+
+<div class="box13" id="box13">
+  <h1>Concert direction</h1>
+  <img src="jconcert.png">
+ 
+
+   <a href="#" class="explore-button right" id="back-to-top">Go Back</a>
+
+</div>
+
+<div class="box14" id="box14">
+	<h1>Awards And Nomination</h1>
+  <img src="jawards.png">
+ 
+
+  <a href="#" class="explore-button right" id="back-to-top">Go Back</a>
+
+</div>
+
+</body>
+</html>
